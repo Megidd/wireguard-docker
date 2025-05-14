@@ -10,10 +10,6 @@ Official mobile clients are availble by WireGuard.
 
 ## Some needed commands
 
-### To upgrade CentOS Stream 8 kernel from 4.xx to 6.xx
-
-Since WireGuard is added to newer Linux kernels, legacy Linux kernel won't work.
-
 ```bash
 mkdir -p ~/wireguard/config
 cd ~/wireguard
@@ -43,6 +39,13 @@ vim docker-compose.yml
 /usr/local/bin/docker-compose up -d
 ls -la ~/wireguard/config/
 ls
+```
+
+### To upgrade CentOS Stream 8 kernel from 4.xx to 6.xx
+
+Since WireGuard is added to newer Linux kernels, legacy Linux kernel won't work.
+
+```bash
 ls /etc/*elease
 less /etc/os-release 
 less /etc/redhat-release 
