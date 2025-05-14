@@ -7,6 +7,11 @@
 Since WireGuard is added to newer Linux kernels, legacy Linux kernel won't work.
 
 ```bash
+mkdir -p ~/wireguard/config
+cd ~/wireguard
+
+vim docker-compose.yml
+
 ls
 /usr/local/bin/docker-compose up -d
 /usr/local/bin/docker-compose ps
