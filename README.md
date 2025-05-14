@@ -6,7 +6,7 @@ Example: https://github.com/DefGuard/client
 
 ## Mobile clients
 
-Official mobile clients are available by WireGuard.
+Official mobile clients are availble by WireGuard.
 
 ## Some needed commands
 
@@ -61,32 +61,3 @@ history |less
 history > history.txt
 ```
 
-# Allowed IPs
-
-For some reason, I had to go inside the Docker container by:
-
-```bash
-sudo docker ps # See Docker container ID
-sudo docker exec -t -i <container-ID>  /bin/bash # Go inside the container and access the shell command line
-```
-
-Now, inside the container, run:
-
-```bash
-cat /etc/wireguard/wg0.conf # Observe the allowed IPs for all peers
-```
-
-If Allowed IPs for peers are something like `AllowedIPs = 10.13.13.2/32`, then open the file with an editor line `vi`:
-
-```bash
-vi /etc/wireguard/wg0.conf
-```
-
-Edit and replace `AllowedIPs = 10.13.13.2/32`  with `AllowedIPs = 0.0.0.0/0` for all peers.
-
-Restart the container:
-
-```bash
-sudo /usr/local/bin/docker-compose down
-sudo /usr/local/bin/docker-compose up -d
-```
