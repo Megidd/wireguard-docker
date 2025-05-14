@@ -1,5 +1,11 @@
 # wireguard-docker
 
+## Desktop client
+
+Example: https://github.com/DefGuard/client
+
+Official mobile clients are availble by WireGuard.
+
 ## Some needed commands
 
 ### To upgrade CentOS Stream 8 kernel from 4.xx to 6.xx
