@@ -6,7 +6,7 @@ Example: https://github.com/DefGuard/client
 
 ## Mobile clients
 
-Official mobile clients are availble by WireGuard.
+Official mobile clients are available for WireGuard.
 
 ## Some needed commands
 
@@ -43,7 +43,7 @@ ls
 
 ### To upgrade CentOS Stream 8 kernel from 4.xx to 6.xx
 
-Since WireGuard is added to newer Linux kernels, legacy Linux kernel won't work.
+Since WireGuard is added to newer Linux kernels, legacy Linux kernels won't work.
 
 ```bash
 ls /etc/*elease
