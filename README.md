@@ -4,6 +4,8 @@
 
 Example: https://github.com/DefGuard/client
 
+## Mobile clients
+
 Official mobile clients are availble by WireGuard.
 
 ## Some needed commands
