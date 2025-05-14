@@ -29,7 +29,6 @@ vim docker-compose.yml
 vim docker-compose.yml 
 /usr/local/bin/docker-compose up -d
 ls -la ~/wireguard/config/
-ls -la config/
 ls
 ls /etc/*elease
 less /etc/os-release 
