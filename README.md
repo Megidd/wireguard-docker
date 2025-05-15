@@ -21,26 +21,23 @@ vim docker-compose.yml
 ls
 /usr/local/bin/docker-compose up -d
 /usr/local/bin/docker-compose ps
-firewall-cmd --permanent --add-port=51820/udp
-systemctl restart firewalld
-firewall-cmd --reload
-ls
-ls -la ~/wireguard/config/peer*
-ls -la ~/wireguard/config/
-ls -la ~/wireguard/config*
-ls
 ls
 /usr/local/bin/docker-compose logs
-less /proc/version 
-less /proc/version 
 ls
 /usr/local/bin/docker-compose down
 vim docker-compose.yml 
 /usr/local/bin/docker-compose up -d
-vim docker-compose.yml 
-/usr/local/bin/docker-compose up -d
-ls -la ~/wireguard/config/
 ls
+```
+
+### Config files
+
+QR code images for clients/peers:
+
+```bash
+ls -la ~/wireguard/config/peer*
+ls -la ~/wireguard/config/
+ls -la ~/wireguard/config*
 ```
 
 ### Firewall
