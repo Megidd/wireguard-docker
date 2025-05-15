@@ -56,6 +56,18 @@ sudo firewall-cmd --permanent --zone=public --add-masquerade
 sudo firewall-cmd --reload
 ```
 
+### Verify
+
+Verify it's working:
+
+```bash
+# Check container logs
+docker logs -f wireguard
+
+# Verify connectivity
+curl -s ifconfig.me
+```
+
 ### To upgrade CentOS Stream 8 kernel from 4.xx to 6.xx
 
 Since WireGuard is added to newer Linux kernels, legacy Linux kernels won't work.
