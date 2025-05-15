@@ -41,6 +41,21 @@ ls -la ~/wireguard/config/
 ls
 ```
 
+### Firewall
+
+Just in case:
+
+```bash
+# Clear any existing rules for port 51820
+sudo firewall-cmd --permanent --remove-port=51820/udp
+sudo firewall-cmd --permanent --remove-port=51820/udp --zone=docker
+
+# Add the port to the public zone with masquerade
+sudo firewall-cmd --permanent --zone=public --add-port=51820/udp
+sudo firewall-cmd --permanent --zone=public --add-masquerade
+sudo firewall-cmd --reload
+```
+
 ### To upgrade CentOS Stream 8 kernel from 4.xx to 6.xx
 
 Since WireGuard is added to newer Linux kernels, legacy Linux kernels won't work.
