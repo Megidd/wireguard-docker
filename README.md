@@ -68,7 +68,7 @@ docker logs -f wireguard
 curl -s ifconfig.me
 ```
 
-### To upgrade CentOS Stream 8 kernel from 4.xx to 6.xx
+## To upgrade CentOS Stream 8 kernel from 4.xx to 6.xx
 
 Since WireGuard is added to newer Linux kernels, legacy Linux kernels won't work.
 
