@@ -10,6 +10,8 @@ Official mobile clients are available for WireGuard.
 
 ## Some needed commands
 
+A history of commands used:
+
 ```bash
 mkdir -p ~/wireguard/config
 cd ~/wireguard
